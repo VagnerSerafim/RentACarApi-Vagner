@@ -1,0 +1,59 @@
+### Teste 1: Criar um carro (POST)
+POST http://localhost:8080/carros
+Content-Type: application/json
+
+{
+  "modelo": "Civic EX",
+  "marca": "Honda",
+  "categoria": "SEDAN",
+  "potenciaMotor": 155,
+  "anoFabricacao": 2020,
+  "precoDiaria": 220.00
+}
+
+### Teste 2: Buscar todos os carros (GET)
+GET http://localhost:8080/carros
+
+### Teste 3: Buscar por ID (GET)
+# Ajuste o ID conforme o que foi criado no Teste 1
+GET http://localhost:8080/carros/1
+
+### Teste 4: Atualização Parcial (PATCH)
+# Altera apenas o precoDiaria do carro com ID 1 (ou o ID que você criou)
+PATCH http://localhost:8080/carros/1
+Content-Type: application/json
+
+{
+    "precoDiaria": 250.00
+}
+
+### Teste 5: Buscar o carro atualizado (GET)
+# Verifique se apenas o preço foi alterado e os demais campos mantidos
+GET http://localhost:8080/carros/1
+
+### Teste 6: Atualização Completa (PUT)
+# Sobrescreve TODO o registro do carro com ID 1
+# Note que, mesmo que você não envie 'criadoPor', ele deve permanecer o mesmo
+PUT http://localhost:8080/carros/1
+Content-Type: application/json
+
+{
+  "modelo": "Fusion Titanium",
+  "marca": "Ford",
+  "categoria": "EXECUTIVO",
+  "potenciaMotor": 248.0,
+  "anoFabricacao": 2023,
+  "precoDiaria": 350.00
+}
+
+### Teste 7: Buscar o registro atualizado (GET)
+# Confirma se TODOS os campos, exceto o 'criadoPor' e 'id', foram alterados pelo PUT
+GET http://localhost:8080/carros/1
+
+### Teste 8: Deletar Carro (DELETE)
+# Remove o registro com ID 1. Espera Status 204 No Content.
+DELETE http://localhost:8080/carros/1
+
+### Teste 9: Verificar exclusão (GET - Esperado 404 Not Found)
+# Confirma que o registro ID 1 foi removido.
+GET http://localhost:8080/carros/1
