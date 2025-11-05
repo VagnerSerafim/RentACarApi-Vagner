@@ -4,17 +4,15 @@ Este projeto é uma API REST desenvolvida em Java com o framework **Spring Boot 
 
 ### 👥 Integrantes do Grupo
 
-* [Nome do Integrante 1]
-* [Nome do Integrante 2]
-* [Seu Nome, Fabio Isidoro Mendes]
-* [Nome do Integrante 4]
-* [Nome do Integrante 5]
+
+* [Vagner Serafim] - https://github.com/VagnerSerafim/RentACarApi-Vagner.git
+
 
 ### ✨ Funcionalidades Implementadas
 
 * **CRUD Completo (`Carro`):** Implementação dos 6 endpoints obrigatórios (GET, POST, PUT, DELETE, PATCH).
 * **Persistência de Dados:** Uso de Spring Data JPA com banco de dados **H2** para desenvolvimento.
-* **Regra de Rastreamento (Obrigatório):** O campo `criadoPor` é automaticamente preenchido no Service com o nome **"Fabio Isidoro Mendes"** em cada requisição POST, atendendo a um requisito específico de auditoria.
+* **Regra de Rastreamento (Obrigatório):** O campo `criadoPor` é automaticamente preenchido no Service com o nome **"Vagner Serafim"** em cada requisição POST, atendendo a um requisito específico de auditoria.
 
 ### 🔗 Endpoints do Recurso Principal (`/carros`)
 

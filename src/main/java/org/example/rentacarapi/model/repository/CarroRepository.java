@@ -1,6 +1,6 @@
 // src/main/java/org.example.rentacarapi.repository/CarroRepository.java
 
-package org.example.rentacarapi.model.repository;
+package org.example.rentacarapi.repository;
 
 import org.example.rentacarapi.model.model.Carro;
 import org.springframework.data.jpa.repository.JpaRepository;

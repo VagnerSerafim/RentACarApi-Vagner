@@ -3,7 +3,7 @@
 package org.example.rentacarapi.service;
 
 import org.example.rentacarapi.dto.CarroRequestDTO;
-import org.example.rentacarapi.model.Carro;
+import org.example.rentacarapi.model.model.Carro;
 import org.example.rentacarapi.repository.CarroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,7 +32,7 @@ public class CarroService {
         novoCarro.setPrecoDiaria(dto.getPrecoDiaria());
 
         // LÓGICA DE NEGÓCIO: Rastreamento (Nome do Colega)
-        novoCarro.setCriadoPor("Fabio Isidoro Mendes"); // <--- Mantenha apenas esta
+        novoCarro.setCriadoPor("Vagner Serafim"); // <--- Mantenha apenas esta
         novoCarro.setDataCriacao(LocalDateTime.now());
 
         return carroRepository.save(novoCarro);

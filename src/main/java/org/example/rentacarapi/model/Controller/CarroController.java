@@ -3,7 +3,7 @@
 package org.example.rentacarapi.controller;
 
 import org.example.rentacarapi.dto.CarroRequestDTO;
-import org.example.rentacarapi.model.Carro;
+import org.example.rentacarapi.model.model.Carro;
 import org.example.rentacarapi.service.CarroService;
 
 import org.springframework.beans.factory.annotation.Autowired;

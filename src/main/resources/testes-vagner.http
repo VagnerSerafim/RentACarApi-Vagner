@@ -1,14 +1,17 @@
 ### Teste 1: Criar um carro (POST)
+# Autor: Vagner Serafim
+# Descrição: Cria um carro do tipo SEDAN com preço de R$220,00
+
 POST http://localhost:8080/carros
 Content-Type: application/json
 
 {
-  "modelo": "Civic EX",
-  "marca": "Honda",
-  "categoria": "SEDAN",
-  "potenciaMotor": 155,
-  "anoFabricacao": 2020,
-  "precoDiaria": 220.00
+  "modelo": "Onix LTZ",
+  "marca": "Chevrolet",
+  "categoria": "Hatch",
+  "potenciaMotor": 116.0,
+  "anoFabricacao": 2021,
+  "precoDiaria": 179.90
 }
 
 ### Teste 2: Buscar todos os carros (GET)
